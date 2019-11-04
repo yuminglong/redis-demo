@@ -61,6 +61,7 @@ public class RedisApplication extends JedisPubSub {
      */
     @Override
     public void onPMessage(String pattern, String channel, String message) {
+        //业务逻辑处理....
         System.out.println(pattern + "=" + channel + "=" + message);
     }
 
